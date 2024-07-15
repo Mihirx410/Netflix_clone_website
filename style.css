@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styling */
+.main {
+    background-image: url('assets/backimg.jpg');
+    height: 97vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Vignette effect using a radial gradient */
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 90%) 80%);
+    z-index: 1;
+}
+
+.navbar {
+    height: 10vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 4.8rem;
+    z-index: 2;
+    /* Ensure navbar is above the gradient */
+}
+
+.btn-sign {
+    position: relative;
+    left: 16rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+
+}
+
+.btn-lang {
+    position: relative;
+    left: 15rem;
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.svg-logo {
+    position: relative;
+    right: 30rem;
+    padding: 20px;
+    z-index: 2;
+    /* Ensure logo is above the gradient */
+}
+
+.btn {
+    z-index: 2;
+    /* Ensure buttons are above the gradient */
+    background-color: rgb(255, 0, 0);
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px 10px;
+}
+
+/* Main content styling */
+.content {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 14em;
+    z-index: 2;
+    /* Ensure content is above the gradient */
+}
+
+.h1 {
+    font-size: 3rem;
+    position: relative;
+    bottom: 55px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.para1,
+.para2 {
+    font-size: 1.5rem;
+    line-height: 2.2em;
+    position: relative;
+    bottom: 55px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+input[type="email"] {
+    width: 300px;
+    padding: 18px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    background-color: transparent;
+    background-color: black;
+    border: 1px solid white;
+    opacity: 0.6;
+    font-weight: 500;
+    color: white;
+    /* Ensure text is visible on transparent background */
+    position: relative;
+    bottom: 50px;
+}
+
+input[type="email"]::placeholder {
+    color: #fff;
+    /* Placeholder text color */
+    background-color: black;
+}
+
+.btn-mail {
+    width: 200px;
+    padding: 14px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    bottom: 50px;
+}
+
+.saperation {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.824);
+}
+
+.section-1 {
+    height: 82vh;
+    width: 99vw;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-text {
+    /* background-color: rgb(0, 0, 0); */
+    height: 70vh;
+    width: 50vw;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-image {
+    height: 60vh;
+    width: 50vw;
+    background-image: url('assets/section-1_tv.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.video-1 {
+    position: absolute;
+    top:900px;
+    left:578px;
+    width: 62.5%;
+    height: 33%;
+    z-index: 0;
+}
+
+.section-1-span {
+    position: relative;
+    left: 110px;
+    width: 40vw;
+    font-weight: 400;
+}
+
+.section-1-h1 {
+    line-height: 100px;
+}
+
+.section-2 {
+    height: 82vh;
+    width: 99vw;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.section-2-image {
+    height: 70vh;
+    width: 50vw;
+    background-image: url("assets/seection-2_img.jpg");
+    background-repeat: no-repeat;
+    background-size: 560px;
+    position: relative;
+    left: 150px;
+    top: 50px;
+}
+
+.section-2-text {
+    height: 70vh;
+    width: 40vw;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-span {
+    position: relative;
+    right: 0px;
+    width: 40vw;
+    font-weight: 400;
+}
+
+.section-2-h1 {
+    margin-bottom: 8px;
+}
+
+.card {
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 10vh;
+    width: 20vw;
+    color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid white;
+    position: relative;
+    right: 640px;
+    top: 240px;
+}
+
+.card-img img {
+    width: 2.5em;
+}
+
+.card-h1 {
+    font-size: 10px;
+    margin: 18px;
+}
+
+.card-h1 span {
+    color: rgb(0, 0, 255);
+    font-size: 15px;
+}
+
+.card-animation {
+    position: relative;
+    top: 25px;
+    left: 45px;
+}
+
+.section-3 {
+    background-color: black;
+    height: 82vh;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section-3-text {
+    height: 70vh;
+    width: 40vw;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    top: 180px;
+}
+
+.section-3-text h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.section-3-text span {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.section-3-img {
+    height: 70vh;
+    width: 40vw;
+    background: url('assets/section-3.png');
+    background-repeat: no-repeat;
+    background-size: 560px;
+    position: relative;
+    top: 50px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-s3 {
+    position: absolute;
+    width: 22vw;
+    right: 310px;
+    bottom: 300px;
+    z-index: 1;
+}
+
+.section-4 {
+    background-color: black;
+    height: 82vh;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section-4-text {
+    height: 70vh;
+    width: 38vw;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    top: 145px;
+}
+
+.section-4-text h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.section-4-text span {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.section-4-img {
+    height: 70vh;
+    width: 40vw;
+    background: url('assets/section-4.png');
+    background-repeat: no-repeat;
+    background-size: 570px;
+    position: relative;
+    top: 45px;
+}
+
+section {
+    height: 130vh;
+    width: 99vw;
+    background-color: black;
+    color: white;
+}
+
+section h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    top: 45px;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Questions {
+    display: flex;
+    background-color: rgb(49, 49, 49);
+    padding: 30px;
+    justify-content: space-between;
+    position: relative;
+    top: 60px;
+    max-width: 60vw;
+    padding: 29px;
+    margin: auto;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    left: 15rem;
+    transition: all 0.2s ease-in-out;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 45 0;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.Questions:hover {
+    background-color: rgb(73, 73, 73);
+}
+
+.membership {
+    margin: 60px 30px;
+    padding: 100px 30px;
+}
+
+.membership-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 46px;
+}
+
+.membership-text h3 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+        font-size: 20px;
+}
+
+.form-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.btn-mail2 {
+    width: 200px;
+    padding: 14px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    bottom: 50px;
+}
+footer {
+    background-color: #141414;
+    padding: 40px 10px;
+    color: #757575;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .questions {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .questions a {
+    color: #757575;
+    text-decoration:none;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-item {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+  }
+  
+  .footer-item a {
+    display: block;
+    color: #757575;
+    text-decoration: underline;
+    margin-bottom: 30px;
+  }
+  
+  .footer-item a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    .footer-item {
+      min-width: 100%;
+      text-align: center;
+    }
+  }
+  
